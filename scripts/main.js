@@ -21,5 +21,7 @@
       return  /\d/.test(String.fromCharCode(event.keyCode));
     });
 
+  ///Regular Expression for email validation
+
   });
 })();

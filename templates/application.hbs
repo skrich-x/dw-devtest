@@ -11,7 +11,7 @@
     <ul class="checkout" id="shipping-address">
       <li id="shipping-email">
         <label>Email Address</label>
-        <input type="email"  id="email-address" placeholder="your@email.com" autofocus="on">
+        <input type="email"  id="email-address" placeholder="your@email.com" autofocus="on" required>
       </li>
       <li id="shipping-email">
         <label>Confrim Email Address</label>
@@ -19,15 +19,15 @@
       </li>
       <li id="shipping-fname">
         <label>  First Name </label>
-        <input id="first-name" maxlength="15"  value=""  type="text" placeholder="">
+        <input id="first-name" maxlength="15"  value=""  type="text" placeholder="" required>
       </li>
       <li id="shipping-lname">
         <label>  Last Name </label>
-        <input id="last-name" maxlength="19"  value=""  type="text" placeholder="">
+        <input id="last-name" maxlength="19"  value=""  type="text" placeholder="" required>
       </li>
       <li id="shipping-addr1">
         <label>  Address 1 </label>
-        <input id="address-1" maxlength="35"  value="" type="text"placeholder="" >
+        <input id="address-1" maxlength="35"  value="" type="text"placeholder="" required>
       </li>
       <li id="shipping-addr2">
         <label> Address 2 </label>
@@ -35,11 +35,11 @@
       </li>
       <li id="shipping-city">
         <label> City </label>
-        <input id="city"  value="" type="text" placeholder="">
+        <input id="city"  value="" type="text" placeholder="" required>
       </li>
       <li id="shipping-state">
         <label> State </label>
-        <select name="state">
+        <select name="state" required>
         <option value="AL">AL</option>
         <option value="AK">AK</option>
         <option value="AZ">AZ</option>
@@ -95,17 +95,17 @@
       </li>
       <li id="shipping-zip">
         <label>Zip</label>
-          <input id="zip" maxlength="5"  value="" type="number" placeholder="">
+          <input id="zip" maxlength="5"  value="" type="number" placeholder="" required>
       </li>
       <li id="shipping-phone">
         <label>Phone </label>
-        <input id="phone" maxlength="10"  value="" type="number" placeholder="">
+        <input id="phone" maxlength="10"  value="" type="number" placeholder="" required>
         {{!-- <span id="error">Numeric Characters Only<span> --}}
       </li>
       <li id="shipping-toggle"> <p>Is this address? </p>
-        <input id="residential"  value="Residential" type="radio" checked="" placeholder="">
+        <input id="residential"  value="Residential" type="radio" checked="">
         <span> Residential </span>
-        <input id="commercial"  value="Commercial" type="radio" placeholder="">
+        <input id="commercial"  value="Commercial" type="radio">
         <span> Commercial </span>
       </li>
       <li id="shipping-company">
